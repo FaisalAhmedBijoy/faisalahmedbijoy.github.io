@@ -31,7 +31,7 @@
 
 |  <a href="https://faisalahmedbijoy.github.io/"><img src="https://icon-library.net//images/icon-programmer/icon-programmer-14.jpg" width="150px" height="150px" /></a> |
 |:---------------------------------------------------------------------------------------------------------------------------------------: |
-|       **[Sourav Chakraborty](https://www.researchgate.net/profile/Soarov_Chakraborty)**                                                                                |
+|                                                                                   |
 |<a href="https://github.com/FaisalAhmedBijoy"><img src="https://cdn.iconscout.com/icon/free/png-256/github-108-438008.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/profile.php?id=100002596378979"><img src="https://i.ibb.co/zmYNW4p/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/faisal-ahmed-2a71581b1/"><img src="https://i.ibb.co/Kx2GSrT/linkedin.png" width="32px" height="32px"></a> |
 
 
