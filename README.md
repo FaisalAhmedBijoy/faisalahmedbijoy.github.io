@@ -1,6 +1,6 @@
 # faisalahmedbijoy.github.io
 
-### Hey 👋, I'm **[Sourav Chakraborty](https://www.researchgate.net/profile/Soarov_Chakraborty)** 👨‍💻
+### Hey 👋, I'm **[Faisal Ahmed Bijoy](https://www.linkedin.com/in/faisal-ahmed-2a71581b1/)** 👨‍💻
 
 
 
@@ -8,10 +8,10 @@
 
 ### About me :eyes:
 
-- :dart: Full stack development | Machine learning | Deep learning | Computer vision | Big data | NoSQL   
-- :e-mail: Ask me about anything ; **soarovchakraborty@gmail.com**
+- :dart: Full stack development | Machine learning | Deep learning |Image Processing and Computer vision | Big data | Natural Language Processing   
+- :e-mail: Ask me about anything ; **faisal.cse16.kuet@gmail.com**
 
-![Sourav's github stats](https://github-readme-stats.vercel.app/api?username=dream-kid&show_icons=true&hide_border=false)
+![Faisal's github stats](https://github-readme-stats.vercel.app/api?username=FaisalAhmedBijoy&show_icons=true&hide_border=false)
 
 ### Languages and Tools :computer:
 
