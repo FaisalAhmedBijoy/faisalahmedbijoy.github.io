@@ -1,6 +1,6 @@
 ## Summary
 
-I am a Machine Learning Engineer/ Data Scientist, who is passionate about supporting companies and customers that want to leverage AI/ML to enlighten peoples' lives using on-premise infrastructure or public cloud services. I have been successful in my roles since I am curious to work backwards with problems and communicate ideas, suggestions, and best practices clearly and in a timely manner. The uniqueness about me and my characteristics is that I practice emotional intelligence at work in addition to my combined strength coming from both academia and industry.
+I am a Machine Learning Engineer/ AI Engineer, who is passionate about supporting companies and customers that want to leverage AI/ML to enlighten peoples' lives using on-premise infrastructure or public cloud services. I have been successful in my roles since I am curious to work backwards with problems and communicate ideas, suggestions, and best practices clearly and in a timely manner. 
 
 
 **Programming Languages:**
@@ -13,7 +13,7 @@ Sage Maker / S3 / Lambda / Code commit CI/CD.
 
 **NLP Skills:**
 
-ChatGPT API / Information Retrieval / Search/Ranking / Summarization / Keyword Extraction / Topic Modeling / Concept Mining / NLG
+ChatGPT API / Information Retrieval / Search / Summarization / Keyword Extraction / Topic Modeling / Concept Mining / NLG
 
 **Machine Learning Skills:**
 
@@ -21,7 +21,7 @@ Naive Bayes / Decision Tree / XG Boost / Gradient Boost / Random Forest / SVM / 
 
 **Selected Libraries:**
 
-PyTorch / Keras / TensorFlow / Gensim / Pandas / Scikit-Learn / Seaborn / NumPy / SciPy / NLTK / SpaCy / TextBlob / OpenNLP / Matplotlib / Python Language Tools / Core NLP / Open C / HuggingFace.
+PyTorch / Keras / TensorFlow / Gensim / Pandas / Scikit-Learn / Seaborn / NumPy / SciPy / NLTK / SpaCy / TextBlob / OpenNLP / Matplotlib / Python Language Tools / Core NLP / HuggingFace.
 
 **Database:**
 
