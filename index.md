@@ -43,14 +43,13 @@ MySQL / Postgres / NoSQL.
 
 - Machine Learning Engineer, Business Automation Limited, Bangladesh (11/2024 to Present)
 - AI Engineer, Next Solution Lab, Bangladesh (02/2024 to 10/2024)
-- Associate AI Engineer, Bangladesh (04/2012 to 01/2024)
+- Associate AI Engineer, Bangladesh (04/2022 to 01/2024)
 
 ## Teaching Materials
 
-If you would like to use my teaching materials to learn, feel free to use them. If you would like to use them to teach or take a few items from them, you need to acknowledge my effort in your class and please email me so that I know that they are drawing attentions.
+If you would like to use my teaching materials to learn, feel free to use them. 
 
-
-### Machine Learning / Technology Tutorials
+### Technology Tutorials
 
 - [Learn Computer Science with Faisal Ahmed](https://www.youtube.com/@learncomputersciencewithfaisal)
 
