@@ -60,8 +60,6 @@ If you would like to use my teaching materials to learn, feel free to use them.
 
 ## Publications
 
-### Peer-reviewed Conferences
-
 #### 2021
 
 [*F. Ahmed*, M. Mahmudul Islam and S. M. Masudul Ahsan, ”Building Infrastruc-
