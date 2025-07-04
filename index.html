@@ -9,36 +9,91 @@
     :root {
       --primary: #00bfff;
       --accent: #ffd700;
-      --bg: #1e1e1e;
-      --card: #2c2c2c;
-      --text: #f0f0f0;
-      --muted: #aaa;
+      --bg-dark: #1e1e1e;
+      --card-dark: #2c2c2c;
+      --text-dark: #f0f0f0;
+      --muted-dark: #aaa;
+
+      --bg-light: #f8f8f8;
+      --card-light: #ffffff;
+      --text-light: #222;
+      --muted-light: #666;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body.dark {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    body.light {
+      background-color: var(--bg-light);
+      color: var(--text-light);
     }
 
     header {
+      position: sticky;
+      top: 0;
       background-color: #111;
-      padding: 3rem 1rem;
-      text-align: center;
-      color: var(--text);
+      z-index: 1000;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.5s;
     }
 
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+    body.light header {
+      background-color: #eee;
+    }
+
+    .site-title {
+      font-size: 1.5rem;
       color: var(--accent);
+      margin: 0.5rem 0;
     }
 
-    header p {
-      font-size: 1.2rem;
-      color: var(--muted);
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .toggle-btn {
+      background-color: var(--primary);
+      border: none;
+      padding: 0.5rem 1rem;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: background-color 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #0091cc;
     }
 
     main {
@@ -48,11 +103,22 @@
     }
 
     section {
-      background: var(--card);
       padding: 1.5rem 2rem;
       margin-bottom: 2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.5s;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s forwards;
+    }
+
+    body.dark section {
+      background: var(--card-dark);
+    }
+
+    body.light section {
+      background: var(--card-light);
     }
 
     section h2 {
@@ -63,6 +129,7 @@
     a {
       color: var(--primary);
       text-decoration: none;
+      transition: color 0.3s;
     }
 
     a:hover {
@@ -77,41 +144,58 @@
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: var(--muted);
+      transition: color 0.5s;
     }
 
-    code {
-      background-color: #333;
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
+    body.dark footer {
+      color: var(--muted-dark);
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+    body.light footer {
+      color: var(--muted-light);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
+    }
 
-      main {
-        padding: 1rem;
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
       }
     }
   </style>
 </head>
-<body>
+
+<body class="dark">
   <header>
-    <h1>Faisal Ahmed</h1>
-    <p>Thought Leadership | Emotional Intelligence | Data Science | Machine Learning | NLP | Educator</p>
+    <div class="site-title">Faisal Ahmed</div>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#presence">Presence</a>
+      <a href="#experience">Experience</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle-btn" onclick="toggleMode()">Toggle Theme</button>
   </header>
 
   <main>
-    <section>
+    <section id="summary">
       <h2>Summary</h2>
       <p>
         I am a Machine Learning Engineer/AI Engineer passionate about supporting companies and customers who want to leverage AI/ML to enlighten lives through on-premise infrastructure or public cloud services. My strengths lie in curiosity, problem-solving, and clear communication of best practices.
       </p>
     </section>
 
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
       <p><strong>Languages:</strong> Python / C++ / Java / JavaScript</p>
       <p><strong>Cloud (AWS):</strong> Sage Maker / S3 / Lambda / Code Commit CI/CD</p>
@@ -121,7 +205,7 @@
       <p><strong>Databases:</strong> MySQL / Postgres / NoSQL</p>
     </section>
 
-    <section>
+    <section id="presence">
       <h2>Digital Presence</h2>
       <ul>
         <li><a href="https://www.linkedin.com/in/faisal-ahmed-2a71581b1" target="_blank">LinkedIn</a></li>
@@ -131,7 +215,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="experience">
       <h2>Work Experience</h2>
       <ul>
         <li><strong>Machine Learning Engineer</strong>, Business Automation Ltd (11/2024 – Present)</li>
@@ -140,16 +224,15 @@
       </ul>
     </section>
 
-    <section>
+    <section id="teaching">
       <h2>Teaching Materials</h2>
-      <p><strong>Tutorial Channel:</strong> <a href="https://www.youtube.com/@learncomputersciencewithfaisal" target="_blank">Learn Computer Science with Faisal Ahmed</a></p>
-      <ul>
+   <ul>
         <li><a href="https://www.youtube.com/playlist?list=PLmwxhqQvdm3KKIl4pWKrTjsW4X-9OrXaK" target="_blank">NLP with Python in Bangla</a></li>
         <li><a href="https://www.youtube.com/playlist?list=PLmwxhqQvdm3JIJunofjQ6CA7o__O_jpIX" target="_blank">Machine Learning & Deep Learning</a></li>
-      </ul>
+    </ul>
     </section>
 
-    <section>
+    <section id="publications">
       <h2>Publications</h2>
       <ul>
         <li>
@@ -160,7 +243,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:faisal.cse16.kuet@gmail.com">faisal.cse16.kuet@gmail.com</a></p>
     </section>
@@ -169,5 +252,19 @@
   <footer>
     &copy; 2025 Faisal Ahmed | Built with ❤️ using GitHub Pages
   </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+      document.body.classList.toggle('light');
+    }
+
+    // Fade-in animation trigger
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("section").forEach((sec, i) => {
+        setTimeout(() => sec.style.animationDelay = `${i * 0.1}s`, 0);
+      });
+    });
+  </script>
 </body>
 </html>
