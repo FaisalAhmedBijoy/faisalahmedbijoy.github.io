@@ -6,12 +6,12 @@
   <title>Faisal Ahmed | AI Researcher &amp; Developer</title>
   <meta
     name="description"
-    content="Faisal Ahmed is an AI Researcher and Developer working across speech processing, generative AI, computer vision, biomedical AI, and production ML systems."
+    content="Faisal Ahmed is an AI Researcher and Developer working across speech processing, generative AI, computer vision, biomedical AI, production ML systems, and open-source Python tooling."
   />
   <meta property="og:title" content="Faisal Ahmed | AI Researcher &amp; Developer" />
   <meta
     property="og:description"
-    content="Portfolio of Faisal Ahmed: machine learning engineering, speech and language AI, RAG, computer vision, biomedical AI, teaching, and publications."
+    content="Portfolio of Faisal Ahmed: machine learning engineering, speech and language AI, RAG, computer vision, biomedical AI, open-source Python packages, teaching, and publications."
   />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/faisal.jpg" />
@@ -619,6 +619,50 @@
       transition: transform 0.2s ease, border-color 0.2s ease;
     }
 
+    .project-card.featured {
+      grid-column: span 2;
+      border-color: var(--accent);
+      background:
+        linear-gradient(135deg, var(--accent-soft) 0%, var(--surface) 42%),
+        var(--surface);
+    }
+
+    .project-kicker {
+      margin: 0 0 0.45rem;
+      color: var(--accent-strong);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .project-summary {
+      margin: 0 0 0.75rem;
+      color: var(--text-soft);
+    }
+
+    .package-command {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      width: fit-content;
+      margin-top: 0.95rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0.55rem 0.7rem;
+      background: var(--surface);
+      color: var(--text-soft);
+      font-size: 0.85rem;
+      font-weight: 850;
+    }
+
+    .package-command code {
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.84rem;
+    }
+
     .project-card:hover,
     .project-card:focus-within {
       border-color: var(--accent);
@@ -987,6 +1031,10 @@
         grid-template-columns: 1fr;
       }
 
+      .project-card.featured {
+        grid-column: auto;
+      }
+
       .hero-actions,
       .contact-actions {
         align-items: stretch;
@@ -1080,11 +1128,11 @@
 
     <div class="hero-metrics" aria-label="Portfolio highlights">
       <div class="metric">
-        <strong>4</strong>
-        <span>Research tracks</span>
+        <strong>1</strong>
+        <span>Open-source PyPI package</span>
       </div>
       <div class="metric">
-        <strong>5</strong>
+        <strong>15</strong>
         <span>Selected projects</span>
       </div>
       <div class="metric">
@@ -1238,9 +1286,41 @@
           <button class="filter-btn" type="button" data-filter="speech">Speech</button>
           <button class="filter-btn" type="button" data-filter="systems">Systems</button>
           <button class="filter-btn" type="button" data-filter="data">Data</button>
+          <button class="filter-btn" type="button" data-filter="opensource">Open Source</button>
         </div>
 
         <div class="project-grid">
+          <article class="project-card featured reveal" data-tags="systems data opensource">
+            <p class="project-kicker">Open-source PyPI package</p>
+            <h3>LogLensX</h3>
+            <p class="project-summary">
+              A public Python package for the developer community, built to make application log analysis
+              easier for FastAPI and Flask projects.
+            </p>
+            <ul>
+              <li>Published on PyPI as <code>loglensx</code> with MIT licensing and Python 3.8+ support.</li>
+              <li>Adds a responsive log analytics dashboard to FastAPI or Flask apps with one setup function.</li>
+              <li>Parses application logs, folds multiline tracebacks, and summarizes errors, warnings, files, and loggers.</li>
+              <li>Includes searchable tables, Plotly visualizations, JSON APIs, and JSON, CSV, or NDJSON exports.</li>
+            </ul>
+            <div class="package-command" aria-label="LogLensX installation command">
+              <span>Install</span>
+              <code>pip install loglensx</code>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://pypi.org/project/loglensx/" target="_blank" rel="noreferrer" aria-label="Open LogLensX on PyPI">PyPI Package</a>
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/loglensx" target="_blank" rel="noreferrer" aria-label="Open LogLensX GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">Open Source</span>
+              <span class="tag">PyPI</span>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Plotly</span>
+            </div>
+          </article>
+
           <article class="project-card reveal" data-tags="llm nlp systems">
             <h3>Document QA RAG System</h3>
             <ul>
@@ -1324,24 +1404,6 @@
               <span class="tag">YOLOv10</span>
               <span class="tag">EasyOCR</span>
               <span class="tag">PyTorch</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-tags="systems data">
-            <h3>LogLensX</h3>
-            <ul>
-              <li>Built an interactive log viewer and analyzer for Python web applications.</li>
-              <li>Created dashboard-style analytics for logs across Flask, Django, and FastAPI workflows.</li>
-            </ul>
-            <div class="project-links">
-              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/loglensx" target="_blank" rel="noreferrer" aria-label="Open LogLensX GitHub repository">GitHub Repo</a>
-            </div>
-            <div class="tag-row" aria-label="Technologies">
-              <span class="tag accent">Systems</span>
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Django</span>
-              <span class="tag">Flask</span>
             </div>
           </article>
 
