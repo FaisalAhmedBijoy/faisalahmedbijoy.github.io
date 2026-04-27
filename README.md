@@ -22,6 +22,10 @@ This repository contains a static GitHub Pages portfolio built with HTML, CSS, a
 ```text
 .
 ├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
 ├── images/
 │   └── faisal.jpg
 ├── pdfs/
