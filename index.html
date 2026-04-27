@@ -629,6 +629,37 @@
       display: none;
     }
 
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.9rem;
+    }
+
+    .project-link {
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 0.78rem;
+      background: var(--surface-soft);
+      color: var(--accent-strong);
+      font-size: 0.82rem;
+      font-weight: 850;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .project-link:hover,
+    .project-link:focus-visible {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      outline: none;
+    }
+
     .tag-row {
       display: flex;
       flex-wrap: wrap;
@@ -1194,7 +1225,7 @@
           <h2>Selected applied AI work.</h2>
           <p>
             A focused set of systems that show the range of my research and engineering work across
-            LLMs, RAG, Bangla NLP, medical AI, OCR, and real-time vision.
+            LLMs, RAG, Bangla NLP, medical AI, OCR, real-time vision, and production tooling.
           </p>
         </div>
 
@@ -1204,15 +1235,21 @@
           <button class="filter-btn" type="button" data-filter="vision">Vision</button>
           <button class="filter-btn" type="button" data-filter="nlp">NLP</button>
           <button class="filter-btn" type="button" data-filter="healthcare">Healthcare</button>
+          <button class="filter-btn" type="button" data-filter="speech">Speech</button>
+          <button class="filter-btn" type="button" data-filter="systems">Systems</button>
+          <button class="filter-btn" type="button" data-filter="data">Data</button>
         </div>
 
         <div class="project-grid">
-          <article class="project-card reveal" data-tags="llm nlp">
+          <article class="project-card reveal" data-tags="llm nlp systems">
             <h3>Document QA RAG System</h3>
             <ul>
               <li>Built a document question-answering workflow with retrieval augmented generation.</li>
               <li>Supported Bengali and English document querying with FAISS vector search, FastAPI, and Docker deployment.</li>
             </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Document-QA-RAG-System-FastAPI" target="_blank" rel="noreferrer" aria-label="Open Document QA RAG System GitHub repository">GitHub Repo</a>
+            </div>
             <div class="tag-row" aria-label="Technologies">
               <span class="tag accent">LLM</span>
               <span class="tag">RAG</span>
@@ -1228,6 +1265,9 @@
               <li>Built a Bangla punctuation restoration model using transformer-based language modeling.</li>
               <li>Used Llama 3.2 for sentence correction and served the workflow through FastAPI and Docker.</li>
             </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Bangla-Sentence-Punctuation-Restoration" target="_blank" rel="noreferrer" aria-label="Open Bangla Sentence Punctuation Restoration GitHub repository">GitHub Repo</a>
+            </div>
             <div class="tag-row" aria-label="Technologies">
               <span class="tag accent">Bangla NLP</span>
               <span class="tag">BanglaBERT</span>
@@ -1242,6 +1282,9 @@
               <li>Developed a transformer-based Seq2Seq model for local Chattogram language conversion.</li>
               <li>Processed data with a SentencePiece tokenizer and trained an encoder-decoder model with attention.</li>
             </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Chattogram-language-to-standard-bangla-language-conversion" target="_blank" rel="noreferrer" aria-label="Open Chattogram to Standard Bangla Conversion GitHub repository">GitHub Repo</a>
+            </div>
             <div class="tag-row" aria-label="Technologies">
               <span class="tag accent">NLP</span>
               <span class="tag">PyTorch</span>
@@ -1256,6 +1299,9 @@
               <li>Classified brain MRI images into four tumor categories using transfer learning.</li>
               <li>Applied a ViT-based medical imaging workflow with PyTorch experimentation.</li>
             </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Brain-Tumor-Classification-Vision-Transformer" target="_blank" rel="noreferrer" aria-label="Open Brain Tumor Classification Vision Transformer GitHub repository">GitHub Repo</a>
+            </div>
             <div class="tag-row" aria-label="Technologies">
               <span class="tag accent">Medical AI</span>
               <span class="tag">PyTorch</span>
@@ -1270,11 +1316,185 @@
               <li>Detected wrong-side vehicle movement with a YOLO-based computer vision system.</li>
               <li>Added license plate extraction using OCR for downstream traffic workflows.</li>
             </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/wrong-side-vehicle-license-plate-detection" target="_blank" rel="noreferrer" aria-label="Open Wrong-Side Vehicle Detection GitHub repository">GitHub Repo</a>
+            </div>
             <div class="tag-row" aria-label="Technologies">
               <span class="tag accent">Vision</span>
               <span class="tag">YOLOv10</span>
               <span class="tag">EasyOCR</span>
               <span class="tag">PyTorch</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="systems data">
+            <h3>LogLensX</h3>
+            <ul>
+              <li>Built an interactive log viewer and analyzer for Python web applications.</li>
+              <li>Created dashboard-style analytics for logs across Flask, Django, and FastAPI workflows.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/loglensx" target="_blank" rel="noreferrer" aria-label="Open LogLensX GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">Systems</span>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Django</span>
+              <span class="tag">Flask</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="llm systems">
+            <h3>AI Agent MCP Server</h3>
+            <ul>
+              <li>Built a Python MCP server foundation for AI agent tooling and workflow integration.</li>
+              <li>Structured the project for agent-server experiments and reusable tool endpoints.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/AI-Agent-MCP-Server" target="_blank" rel="noreferrer" aria-label="Open AI Agent MCP Server GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">AI Agents</span>
+              <span class="tag">MCP</span>
+              <span class="tag">Python</span>
+              <span class="tag">Systems</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="llm nlp systems">
+            <h3>GraphRAG Chatbot with FastAPI</h3>
+            <ul>
+              <li>Developed a chatbot workflow using GraphRAG and a FastAPI service layer.</li>
+              <li>Organized an LLM backend for retrieval-grounded responses and API integration.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Chatbot-GraphRAG-LLM-FastAPI" target="_blank" rel="noreferrer" aria-label="Open GraphRAG Chatbot with FastAPI GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">LLM</span>
+              <span class="tag">GraphRAG</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Python</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="systems data">
+            <h3>Anomaly Detection FastAPI</h3>
+            <ul>
+              <li>Packaged an anomaly detection model workflow behind a FastAPI service interface.</li>
+              <li>Prepared API endpoints for scoring and integration with production-style ML pipelines.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Anomaly-Detection-FastAPI" target="_blank" rel="noreferrer" aria-label="Open Anomaly Detection FastAPI GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">ML Systems</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Python</span>
+              <span class="tag">Anomaly Detection</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="nlp speech">
+            <h3>Automatic Speech Recognition</h3>
+            <ul>
+              <li>Developed an automatic speech recognition repository for speech-to-text experimentation.</li>
+              <li>Focused on model workflow foundations for audio processing and language AI.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Automatic-speech-recognition" target="_blank" rel="noreferrer" aria-label="Open Automatic Speech Recognition GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">Speech</span>
+              <span class="tag">ASR</span>
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="vision systems">
+            <h3>Image Cryptography with Autoencoders</h3>
+            <ul>
+              <li>Implemented chaotic-map image encryption and decryption with autoencoder experiments.</li>
+              <li>Included image-processing utilities and metrics such as SSIM, NPCR, and UACI.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Image_Cryptography_with_Autoencoders" target="_blank" rel="noreferrer" aria-label="Open Image Cryptography with Autoencoders GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">Deep Learning</span>
+              <span class="tag">Autoencoder</span>
+              <span class="tag">Security</span>
+              <span class="tag">Python</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="vision">
+            <h3>Building Infrastructure Recognition</h3>
+            <ul>
+              <li>Studied building infrastructure recognition using deep learning methods.</li>
+              <li>Combined classification and object-detection experiments for infrastructure analysis.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/A-Study-on-Building-Infrastructure-Recognition-Using-Deep-Learning-Methods" target="_blank" rel="noreferrer" aria-label="Open Building Infrastructure Recognition GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">Vision</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Object Detection</span>
+              <span class="tag">Research</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="nlp data">
+            <h3>Resume Categorization with Transformers</h3>
+            <ul>
+              <li>Built a transformer-based resume categorization workflow.</li>
+              <li>Used EDA and NLP modeling to map resume text into role categories.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Resume-Categorization-using-Transformers" target="_blank" rel="noreferrer" aria-label="Open Resume Categorization with Transformers GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">NLP</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">BERT</span>
+              <span class="tag">EDA</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="nlp data">
+            <h3>Document Similarity with Doc2Vec</h3>
+            <ul>
+              <li>Implemented document similarity measurement using Doc2Vec and Gensim.</li>
+              <li>Applied NLP feature learning for semantic comparison workflows.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Document-similarity-using-doc2vec-and-gensim" target="_blank" rel="noreferrer" aria-label="Open Document Similarity with Doc2Vec GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">NLP</span>
+              <span class="tag">Doc2Vec</span>
+              <span class="tag">Gensim</span>
+              <span class="tag">Python</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="vision">
+            <h3>Face and Eye Blink Detection</h3>
+            <ul>
+              <li>Built face and eye-blink detection with dlib and OpenCV.</li>
+              <li>Focused on real-time vision signals for monitoring and liveness-style interfaces.</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/FaisalAhmedBijoy/Face-eye-blinking-detection-using-dlib-and-opencv" target="_blank" rel="noreferrer" aria-label="Open Face and Eye Blink Detection GitHub repository">GitHub Repo</a>
+            </div>
+            <div class="tag-row" aria-label="Technologies">
+              <span class="tag accent">Vision</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">dlib</span>
+              <span class="tag">Python</span>
             </div>
           </article>
         </div>
