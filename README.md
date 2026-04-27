@@ -1,59 +1,74 @@
-# faisalahmedbijoy.github.io
+# Faisal Ahmed Portfolio
 
-### Hey 👋, I'm **[Faisal Ahmed Bijoy](https://www.linkedin.com/in/faisal-ahmed-2a71581b1/)** 👨‍💻
+Personal portfolio website for Faisal Ahmed, an AI researcher and developer working across language and speech AI, generative AI, computer vision, biomedical AI, production ML systems, and open-source Python tooling.
 
+Live site: <https://faisalahmedbijoy.github.io/>
 
+## Overview
 
-👨‍🎓 B.Sc. in Computer Science and Engineering from the **[Khulna University of Engineering & Technology](http://www.kuet.ac.bd)** 
+This repository contains a static GitHub Pages portfolio built with HTML, CSS, and vanilla JavaScript. The site is designed to present applied AI work, research background, open-source contributions, teaching content, and contact information in one lightweight page.
 
-### About me :eyes:
+## Highlights
 
-- :dart: Full stack development | Machine learning | Deep learning |Image Processing and Computer vision | Big data | Natural Language Processing   
-- :e-mail: Ask me about anything ; **faisal.cse16.kuet@gmail.com**
+- Applied AI project portfolio with filterable cards for LLM, NLP, vision, healthcare, speech, systems, data, and open-source work.
+- Featured open-source package: [LogLensX](https://pypi.org/project/loglensx/), a PyPI package for interactive log analysis dashboards in FastAPI and Flask applications.
+- GitHub links for all selected projects.
+- Teaching section focused on Bangla AI education, including the [Natural Language Processing with Python in Bangla](https://www.youtube.com/playlist?list=PLmwxhqQvdm3KKIl4pWKrTjsW4X-9OrXaK) playlist.
+- Separate Publication & Education section for research, thesis, academic background, and leadership.
+- Responsive layout with light/dark theme support, animated reveal states, project filters, and email copy feedback.
 
-![Faisal's github stats](https://github-readme-stats.vercel.app/api?username=FaisalAhmedBijoy&show_icons=true&hide_border=false)
+## Project Structure
 
-### Languages and Tools :computer:
+```text
+.
+├── index.html
+├── images/
+│   └── faisal.jpg
+├── pdfs/
+│   └── Faisal_Ahmed_ML_Engineer.pdf
+└── README.md
+```
 
-[![Python](https://img.shields.io/badge/-Python-black?style=flat&logo=python&link=https://github.com/Dream-kid)](https://github.com/FaisalAhmedBijoy) [![Java](https://img.shields.io/badge/Java-orange?style=flat&logo=java&logoColor=white&link=https://github.com/Dream-kid)](https://github.com/FaisalAhmedBijoy) [![C++](https://img.shields.io/badge/-C/C%2B%2B-%2300599C?style=flat&logo=C%2B%2B&logoColor=ffffff)](https://github.com/FaisalAhmedBijoy) [![Tensorflow](https://img.shields.io/badge/-Tensorflow-gray?style=flat&logo=tensorflow&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy) 
+## Local Preview
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript&link=https://github.com/FaisalAhmedBijoy) [![Keras](https://img.shields.io/badge/-Keras-red?style=flat&logo=keras&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy) 
+Because the site is static, it can be opened directly in a browser:
 
-[![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy) [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy) [![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat&logo=bootstrap&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy)
+```bash
+open index.html
+```
 
+You can also serve it locally:
 
-[![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy) 
-[![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat&logo=mysql&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy)
+```bash
+python3 -m http.server 8000
+```
 
-[![Git](https://img.shields.io/badge/-Git-black?style=flat&logo=git&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy) [![GitLab](https://img.shields.io/badge/-GitLab-FCA121?style=flat&logo=gitlab&link=https://github.com/FaisalAhmedBijoy)](https://gitlab.com/FaisalAhmedBijoy) [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&link=https://github.com/FaisalAhmedBijoy)](https://github.com/FaisalAhmedBijoy)
+Then visit:
 
-### Reach out to me 👓
+```text
+http://localhost:8000
+```
 
-|  <a href="https://faisalahmedbijoy.github.io/"><img src="https://icon-library.net//images/icon-programmer/icon-programmer-14.jpg" width="150px" height="150px" /></a> |
-|:---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                   |
-|<a href="https://github.com/FaisalAhmedBijoy"><img src="https://cdn.iconscout.com/icon/free/png-256/github-108-438008.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/profile.php?id=100002596378979"><img src="https://i.ibb.co/zmYNW4p/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/faisal-ahmed-2a71581b1/"><img src="https://i.ibb.co/Kx2GSrT/linkedin.png" width="32px" height="32px"></a> |
+## Deployment
 
+This repository is configured for GitHub Pages. Updates to the main branch are published at:
 
+```text
+https://faisalahmedbijoy.github.io/
+```
 
+## Main Sections
 
+- Profile
+- Experience
+- Projects
+- Skills
+- Teaching
+- Publication & Education
+- Contact
 
+## Contact
 
-
-
-
-
-<!--
-**FaisalAhmedBijoy/FaisalAhmedBijoy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Email: <faisal.cse16.kuet@gmail.com>
+- GitHub: <https://github.com/FaisalAhmedBijoy>
+- LinkedIn: <https://www.linkedin.com/in/faisal-ahmed-2a71581b1/>
